@@ -13,7 +13,7 @@
   --border: #dfe7ec;
   --teal: #0f766e;
   --teal-strong: #0b5f59;
-  --amber: #f59e0b;
+  --amber: #d97706;
   --coral: #e85d4f;
   --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
 }
@@ -204,8 +204,7 @@ h2 {
 }
 
 .metric-card,
-.panel,
-.delivery-band {
+.panel {
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -314,6 +313,28 @@ h2 {
   font-weight: 700;
 }
 
+.job-intake {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #d5e5e2;
+  border-radius: 8px;
+  background: #f4fbf9;
+}
+
+.job-intake svg {
+  color: var(--teal);
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+.job-intake p {
+  color: #26323d;
+  line-height: 1.45;
+}
+
 .ai-output {
   display: grid;
   gap: 10px;
@@ -345,6 +366,41 @@ h2 {
 
 .table-wrap {
   overflow-x: auto;
+}
+
+.escrow-steps {
+  display: grid;
+  gap: 10px;
+}
+
+.escrow-steps div {
+  min-height: 82px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  row-gap: 3px;
+}
+
+.escrow-steps svg {
+  grid-row: span 2;
+  color: #94a3b8;
+}
+
+.escrow-steps .complete svg {
+  color: var(--teal);
+}
+
+.escrow-steps strong {
+  color: var(--text);
+}
+
+.escrow-steps span {
+  color: var(--muted);
+  font-size: 12px;
 }
 
 table {
@@ -395,25 +451,6 @@ td span {
 .service-list span {
   color: var(--muted);
   font-size: 12px;
-}
-
-.delivery-band {
-  margin-top: 14px;
-  padding: 16px 18px;
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.delivery-band svg {
-  color: var(--amber);
-  flex: 0 0 auto;
-}
-
-.delivery-band p {
-  margin-top: 4px;
-  color: var(--muted);
-  line-height: 1.45;
 }
 
 @media (max-width: 1120px) {

@@ -1,28 +1,23 @@
-# LaunchOps AI SaaS MVP Demo
+# MarketPilot AI Marketplace Demo
 
-Interactive proposal demo for an AI-powered SaaS MVP: dashboard UI, simulated OpenAI workflow, Stripe-style subscription controls, admin users table, API health panel, and MongoDB/API architecture notes.
+Interactive proposal demo for an AI-driven marketplace MVP. It shows the product surface I would use before wiring real services: job intake, AI provider matching, payment/escrow states, provider shortlist, and backend readiness.
 
-## Why this demo exists
+## What it demonstrates
 
-This is a fast proof-of-execution for a founder who needs a full-stack SaaS MVP built from scratch. It shows the product surface I would use as the starting point before wiring real services.
+- Marketplace intake and AI-assisted provider matching
+- Stripe-style escrow/payment state handling
+- Provider shortlist and admin review workflow
+- Backend service map for Nest.js, PostgreSQL, webhooks, auth, and AWS deployment
+- React/Vite prototype with interactive tabs, state changes, and responsive dashboard layout
 
-## Stack I would use for the real MVP
+## Real MVP stack alignment
 
-- Frontend: React or Next.js, TypeScript, responsive dashboard UI
-- Backend: Node.js REST API with validation, rate limits, audit logging, and role checks
-- Auth: email/password plus OAuth, session management, protected routes
-- Database: MongoDB collections for users, organizations, plans, usage, AI jobs, and billing events
-- Billing: Stripe Checkout, Customer Portal, subscriptions, invoices, and webhook reconciliation
-- AI: OpenAI API with prompt templates, usage tracking, retries, moderation/guardrails, and background jobs
-- Deployment: Vercel/Netlify for frontend, managed Node API, environment variables, monitoring, and documentation
-
-## Estimated MVP timeline
-
-- Week 1: architecture, auth, database schema, protected app shell
-- Week 2: dashboard, admin users/subscriptions, REST API foundations
-- Week 3: Stripe plans, Checkout, Customer Portal, webhook event handling
-- Week 4: OpenAI feature, usage metering, admin controls, basic QA
-- Week 5-6: deployment, docs, error handling, security pass, scaling cleanup
+- Frontend: Next.js, React, TypeScript, Tailwind-ready component structure
+- Backend: Nest.js or Node.js API with validation, role checks, queues, and webhooks
+- Database: PostgreSQL tables for jobs, providers, contracts, payments, and audit events
+- Payments: Stripe Checkout, PaymentIntents or escrow-like milestone flow, webhook reconciliation
+- AI: AI API integration for requirements extraction, provider ranking, risk review, and admin notes
+- Deployment: AWS or equivalent managed infrastructure with environment config, logs, and monitoring
 
 ## Local development
 
